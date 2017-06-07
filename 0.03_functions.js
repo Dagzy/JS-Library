@@ -85,8 +85,9 @@
 console.log("The total charges for this month are: $" + bills(350, 150, 100));
 	
 
-	function totalWithTax(each , quantity , tax){
-		return each * quantity + each * quantity * tax;
-		console.log("Your total including tax is:" + totalWithTax);
+	function totalWithTax(each , quantity){
+		var tax = .07
+		var totalWithTax = each * quantity + each * quantity * tax.toFixed (2);
+		console.log("For" + quantity + "sodas, your total including tax is: " + totalWithTax);
 	}
-	totalWithTax(.99 , 100 , .07);
+	totalWithTax(.99 , 100);
