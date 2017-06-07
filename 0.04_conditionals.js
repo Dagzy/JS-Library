@@ -36,7 +36,7 @@ if(name = "quincy") {
 if(242 % 2 === 0){
 	console.log("This number is even.");
 }
-var userName = "admi";
+var userName = "admin";
 var password = "test123";
 
 if (userName == "admin"){
@@ -57,4 +57,29 @@ if(userName == "admin"){
 	console.log("the password is incorrect");
 }else{
 	console.log("the username is incorrect");
+}
+
+
+/*
+if (boolean expression) {
+	//some code goes here console.log or whatever
+}else if(BOOLEAN EXPRESSION GOES HERE){
+	//some code goes here console.log or whatever
+	
+}
+else{
+	//catch all
+}
+*/
+
+var age = 40;
+
+if (age >=35){
+	console.log("You can vote and also hold any place in government.");
+}else if (age >=25){
+	console.log("You can vote and run for Senate");
+}else if (age >= 18){
+	console.log("You can only vote.");
+}else {
+	console.log("You're outta luck!");
 }
