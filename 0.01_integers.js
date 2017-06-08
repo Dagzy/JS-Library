@@ -11,5 +11,11 @@ console.log(10%3);
 console.log(14%4);
 console.log(27%15);
 
-var gummyWorms = "Gummy Worms"
+var gummyWorms = "Gummy Worms";
 console.log("Gummy Worms is not a number: that is" , isNaN(gummyWorms) + "!");
+
+
+
+
+var name = "Heather";
+console.log(name);

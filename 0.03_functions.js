@@ -91,3 +91,27 @@ console.log("The total charges for this month are: $" + bills(350, 150, 100));
 		console.log("For" + quantity + "sodas, your total including tax is: " + totalWithTax);
 	}
 	totalWithTax(.99 , 100);
+	//Create a calculator function that accepts 3 arguments, 2 numbers and 1 operator.
+	//ex. calculator( 2, *, 2)*/
+
+
+function calculator(num1, operator, num2){
+		if (operator=="+") {
+			return num1 + num2;
+		}
+		else if (operator=="-") {
+			return num1 - num2;
+		}		
+		else if(operator=="/"){
+			var num3 = num1 / num2;
+			console.log(num3)
+		}
+		/*else if (operator=="*"){
+			return num1 * num2;
+		}*/
+		else if(operator =="%"){
+			return num1 % num2
+		}
+
+}//Calculator
+console.log(calculator(4, "/", 3));
