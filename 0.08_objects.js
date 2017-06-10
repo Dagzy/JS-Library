@@ -85,3 +85,111 @@ var theBryceIsRight = {
 //theBryceIsRight.doBoth(console.log(theBryceIsRight.vocation));
 
 console.log(theBryceIsRight.doBoth() + " " + theBryceIsRight.vocation);
+
+
+//object constructors
+var paul = new Object;
+//object constructor template
+paul.name = "Paul O'Connor";
+console.log(paul);
+paul.vocation = "Curriculum Master";
+paul.hobbies = ["rocking out code", "listening to good music", "baking banana muffins"];
+
+function Hotel(name, rooms, booked){
+	this.name = name;
+	this.room = rooms;
+	this.booked = booked;
+	this.checkAvailability = function (){
+		return "There are " + (this.room - this.booked) + " rooms left."
+	};
+};
+
+var jw = new Hotel("JW Marriott", 300, 250);
+var jwExp = new Hotel("Mini J'Dubs", 100, 50);
+var alohaHotels = new Hotel("Aloha", 125, 50);
+
+console.log(jwExp.checkAvailability());
+//adding objects to an array
+//var hotels = ""
+
+var adult = {
+	hair 		: "Brown",
+	eyes 		: "Blue",
+	skin		: "Fair",
+	getHair		: function(){
+					return (this.hair);
+	},
+	getEyes		: function(){
+					return(this.eyes);
+	},
+	getSkin		: function(){
+					return(this.skin);
+	},
+
+	}
+
+
+var child = {
+	hair : adult.getHair(),
+	eyes : adult.getEyes(),
+	skin : adult.getSkin(),
+	height : "150 cm",
+}
+
+console.log(child);
+
+var child2 = adult
+child2["height"] = "5ft"
+
+console.log(child2);
+/*	inherit		: function(){
+		this.hair = adult.getHair();
+		this.eyes = adult.getEyes();
+		this.skin = adult.getSkin();
+*/
+
+/*var person1 = {
+	name 			: "Quincy",
+	age				: 34,
+	favoriteShows	: ["Adventure Time", "Family Guy", "Downton Abbey", "Rick And Morty", "Jeopardy"],
+	agePlusOne		: function(){
+		return (this.age + 1);
+	},
+};
+var person2 = {
+	name 			: "Heather",
+	age				: 24,
+	favoriteShows	: ["Orange Is The New Black", "Rick And Morty", "My Little Pony", "Adventure Time", "Annoying Orange"],
+
+};
+var person3 = {
+	name 			: "Sean",
+	age 			: 20,
+	favoriteShows 	: ["Rick And Morty", "Adventure Time", "Twitch", "Candyland", "Hello Kitty"],
+}
+console.log(person1.agePlusOne());
+*/
+function people (name, age, favoriteShows){
+	this.name = name;
+	this.age = age;
+	this.favoriteShows = favoriteShows;
+};
+
+var quincy = new people ("Quincy", 34, ["Adventure Time", "Family Guy", "Downton Abbey", "Rick And Morty", "Jeopardy"]);
+var heather = new people ("Heather", 24, ["Orange Is The New Black", "Rick And Morty", "Hello Kitty", "Adventure Time", "Annoying Orange"]);
+var sean = new people ("Sean", 20, ["Rick And Morty", "Adventure Time", "Twitch", "Candyland", "Hello Kitty"]);
+
+//console.log(quincy);
+
+function commonShows (){
+	for (var i in quincy.favoriteShows){
+		for (var j in heather.favoriteShows){
+			if (quincy.favoriteShows[i] == heather.favoriteShows[j]){
+				console.log(favoriteShows[i]);
+			};
+		};
+	};
+};
+		
+commonShows();	
+

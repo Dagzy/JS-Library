@@ -2,19 +2,25 @@ var lcv = 0;
 do{
 	lcv = lcv + 1;
 	console.log("lcv is now:"+lcv);
-}while(lcv < 6);
+}
+while(lcv < 6);
 
 var lcv = 2;
+
 do{
 	lcv = lcv + 2;
 	console.log("lcv is now:" +lcv);
-}while(lcv < 20);
+}
+
+while(lcv < 20);
 
 var lcv = 10;
 do{
 	lcv = lcv - 1;
 	console.log("lcv is now:" + lcv);
-}while(lcv > 0);
+}
+
+while(lcv > 0);
 
 
 //while loop
@@ -24,6 +30,7 @@ while(true||false){
 }
 */
 var counting = 0;
+
 while(counting < 50){
 	counting +=5;
 	console.log(counting);
@@ -65,3 +72,6 @@ var doorOpen= true;
 
 	}else {console.log("The door is closed!");
 }
+
+var daysUntilAnniversary = [];
+for(daysUntilAnniversary)
