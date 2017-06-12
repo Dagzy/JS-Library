@@ -1,0 +1,22 @@
+.parent{
+	border: 5px solid lightcoral;
+}
+.item {
+	height: 50px;
+	margin: 5px;
+	background: DeepSkyBlue;
+	color: white;
+	text-align: center;
+	line-height: 50px
+	font-weight: 600;
+}
+
+/* flex stuff */
+
+.parent{
+	display: flex;
+	justify-content: center;
+}
+.item {
+	width: 50px
+}
